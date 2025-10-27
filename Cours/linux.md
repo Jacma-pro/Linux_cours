@@ -110,3 +110,20 @@ Support & communauté | Ubuntu (grande communauté) vs Gentoo (communauté plus 
     - Arch Linux
         - Manjaro
         - EndeavourOS
+
+
+## Commandes de base Linux :
+Voici quelques commandes de base pour naviguer et gérer un système Linux via le terminal :
+
+- `ls` : Liste les fichiers et répertoires dans le répertoire courant.
+- `cd [répertoire]` : Change le répertoire courant vers le répertoire spécifié.
+- `pwd` : Affiche le chemin complet du répertoire courant.
+- `cp [source] [destination]` : Copie un fichier ou un répertoire.
+- `mv [source] [destination]` : Déplace ou renomme un fichier ou un répertoire.
+- `rm [fichier]` : Supprime un fichier.
+- `mkdir [répertoire]` : Crée un nouveau répertoire.
+- `rmdir [répertoire]` : Supprime un répertoire vide.
+- `touch [fichier]` : Crée un nouveau fichier vide ou met à jour la date de modification d'un fichier existant.
+- `cat [fichier]` : Affiche le contenu d'un fichier.
+- `nano [fichier]` : Ouvre un éditeur de texte en ligne de commande.
+- `sudo [commande]` : Exécute une commande avec les privilèges de superutilisateur.
