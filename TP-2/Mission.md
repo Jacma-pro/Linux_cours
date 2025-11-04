@@ -1,5 +1,5 @@
 
-# 🔍 Missions possibles à distribuer
+# 🔍 Différentes missions pour comprendre le système
 
 ## Niveau 1 - Découverte
 1. Trouve le fichier qui liste tous les utilisateurs enregistrés.
@@ -32,11 +32,11 @@ Mission | Fichier ou dossier trouvé | Commande(s) utilisée(s) | Ce que le fich
 Mission | Fichier ou dossier trouvé | Commande(s) utilisée(s) | Ce que le fichier contient | Rôle supposé
 --- | --- | --- | --- | ---
 1 | `/etc/init.d` | `ls /etc/init.d` | Scripts de démarrage des services | Contient les scripts pour les services au démarrage
-2 | `/etc/network/interfaces` | `cat /etc/network/interfaces`ou alors `ls /etc/netplan/00-installer-config.yaml; ls /etc/netplan/01-network-manager-all.yaml` | Configuration réseau | Contient les paramètres réseau
-3 | `/boot/vmlinuz-6.17.0-5-generic` | `ls /boot` | Fichier du noyau Linux | Contient le noyau utilisé par le système
+2 | `/etc/netplan/00-installer-config.yaml` & `/etc/netplan/01-network-manager-all.yaml` | `sudo cat /etc/netplan/00-installer-config.yaml; sudo cat /etc/netplan/01-network-manager-all.yaml` | Configuration réseau | Contient les paramètres réseau
+3 | `/boot/vmlinuz-6.17.0-5-generic` | `ls /boot` | Fichier du noyau Linux | Contient le noyau utilisé par le système (note pour moi même : ne pas faire `sudo cat` dessus !, Je l'ai fait et ça a affiché des caractères bizarres, (c'est juste que c'est encodé en fait))
 4 | `~/.bashrc` | `cat ~/.bashrc` | Configuration du shell Bash | Contient les paramètres et alias pour Bash
-5 | `/etc/shadow` | `sudo cat /etc/shadow` | Mots de passe des utilisateurs | Contient les mots de passe chiffrés
-6 | `/proc/meminfo` | `cat /proc/meminfo` | Informations sur la mémoire | Affiche l'utilisation de la mémoire système (on remarquera que le mot de passe de mon utilisateur est haché dans ce fichier)
+5 | `/etc/shadow` | `sudo cat /etc/shadow` | Mots de passe des utilisateurs | Contient les mots de passe chiffrés (on remarquera que le mot de passe de mon utilisateur est haché dans ce fichier)
+6 | `/proc/meminfo` | `cat /proc/meminfo` | Informations sur la mémoire | Affiche l'utilisation de la mémoire système 
 
 ## Niveau 3 - Expert
 
@@ -50,3 +50,9 @@ Mission | Fichier ou dossier trouvé | Commande(s) utilisée(s) | Ce que le fich
 ### 📋 Tableau à compléter :
 Mission | Fichier ou dossier trouvé | Commande(s) utilisée(s) | Ce que le fichier contient | Rôle supposé
 --- | --- | --- | --- | ---
+1 | `/proc/[PID]` | `cat /proc/[PID]/status` | Informations sur les processus | Contient des informations détaillées sur chaque processus en cours
+2 | `/proc/mounts` | `cat /proc/mounts` | Liste des périphériques montés | Contient les points de montage des systèmes de fichiers
+3 | `/sys/class/net/[interface]` | `ls /sys/class/net/` | Informations sur la carte réseau | Contient des informations sur les interfaces réseau
+4 | `/root` | `cd /root` | Répertoire personnel de l'utilisateur root | Contient les fichiers de l'utilisateur root
+5 | N/A | `sudo du -ah / | sort -rh | head -n 10` | Liste des plus gros fichiers | Affiche les 10 plus gros fichiers du système
+6 | `/var/log/kern.log` | `sudo cat /var/log/kern.log` | Logs du noyau | Contient les messages et erreurs du noyau Linux
