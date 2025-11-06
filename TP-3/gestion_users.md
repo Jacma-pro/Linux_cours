@@ -160,7 +160,9 @@ Mission | Commande(s) utilisée(s) | Observation / résultat | Rôle ou explicat
 **4** | `sudo systemctl stop cron.service`<br> `sudo systemctl status cron`<br> `sudo systemctl start cron.service`<br> `sudo systemctl status cron` | Service "cron" redémarré et statut vérifié | Redémarre un service et vérifie son état
 
 capture d'écran : <br>
-**1** ![capture d'écran des processus utilisateur](images/niveau-3/grep-dorian.png)
+**1** ![capture d'écran des processus utilisateur](images/niveau-3/grep-dorian.png) <br>
+(c'est encore très long !)<br>
 **2** ![capture d'écran de la terminaison du processus](images/niveau-3/kill-2025.png)
-**3** ![capture d'écran des services au démarrage](images/niveau-3/start-boot.png)
+**3** ![capture d'écran des services au démarrage](images/niveau-3/start-boot.png) <br>
+(pareil ici !)<br>
 **4** ![capture d'écran du redémarrage du service](images/Realisation/R4.png)
