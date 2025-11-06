@@ -109,7 +109,7 @@ Mission | Commande(s) utilisée(s) | Observation / résultat | Rôle ou explicat
 **1 bis** | `sudo groupadd MDS` | Groupe "MDS" créé | Crée un nouveau groupe
 **2** | `sudo usermod -aG MDS gwen` | "gwen" ajouté au groupe "MDS" | Ajoute l'utilisateur "gwen" au groupe "MDS"
 **3** | `sudo passwd gwen` | Mot de passe défini pour "gwen" | Définit le mot de passe pour l'utilisateur
-**pré 4** | `sudo useradd -m nico`<br> `sudo passwd nico` <br> 'sudo usermod -aG MDS nico' | Utilisateur "nico" créé et ajouté au groupe "MDS" | Préparation de l'utilisateur à supprimer
+**pré 4** | `sudo useradd -m nico`<br> `sudo passwd nico` <br> `sudo usermod -aG MDS nico` | Utilisateur "nico" créé et ajouté au groupe "MDS" | Préparation de l'utilisateur à supprimer
 **4** | `sudo deluser --remove-home nico` |  Utilisateur "nico" supprimé avec son répertoire | Supprime l'utilisateur et son répertoire personnel
 
 ### Contenu du fichier /etc/group après les modifications :
