@@ -1,6 +1,8 @@
 
 # 🔍 Différentes missions pour comprendre le système
 
+**Lien des consignes :** [TP-2](https://sand-metacarpal-859.notion.site/TP-2-Exploration-du-syst-me-Linux-28fa4f0ae4ab80dda976de38b1d2247c)
+
 ## Niveau 1 - Découverte
 1. Trouve le fichier qui liste tous les utilisateurs enregistrés.
 2. Trouve le répertoire personnel de ton utilisateur.
