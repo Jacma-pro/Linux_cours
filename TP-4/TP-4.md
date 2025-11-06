@@ -30,6 +30,28 @@ Tu peux utiliser la documentation, les manuels (`man`), les forums ou ton IA, ma
 
 ## Réalisation des missions
 
-### Mission choisie : 🧹 Nettoyage automatique
+### Mission:  🧹 Nettoyage automatique
 
 voir mon script en cliquant ici : [script.sh](scripts/nettoyage.sh)
+
+voici le résultat :
+```bash
+nano nettoyage.sh
+sudo chmod +x scripts/nettoyage.sh
+sudo ./nettoyage.sh
+```
+![alt text](images/nettoyage.png) <br>
+
+### Mission: 📦 Mise à jour automatisée
+
+voir mon script en cliquant ici : [script.sh](scripts/maj.sh)
+
+voici le résultat :
+
+```bash
+nano maj.sh
+sudo chmod +x scripts/maj.sh
+sudo ./maj.sh
+cat /var/log/maj/maj.log
+```
+![alt text](images/maj.png)
