@@ -2,6 +2,13 @@
 
 **Lien des consignes :** [TP-3](https://sand-metacarpal-859.notion.site/TP-3-Gestion-des-utilisateurs-droits-et-processus-28fa4f0ae4ab800690d9e6a39e01d44f)
 
+## 🎯 Objectifs du TP
+
+- Créer, modifier et supprimer des utilisateurs et des groupes.
+- Comprendre et manipuler les droits d’accès (lecture, écriture, exécution).
+- Identifier et gérer les processus actifs du système.
+- Diagnostiquer un problème de permission ou de service bloqué.
+
 ## 🪜 Étapes de réalisation
 
 1. **Préparation du terrain**

@@ -1,7 +1,13 @@
 # TP-1 : Premiers pas dans le terminal Linux
 **Lien des consignes :** [TP-1](https://sand-metacarpal-859.notion.site/TP-1-Premiers-pas-dans-le-terminal-Linux-292a4f0ae4ab800c93b6dad267cae3f1)
 
-### 🎯
+## 🎯 Objectifs
+
+- Comprendre la logique du terminal et du shell Bash.
+- Savoir se déplacer dans l’arborescence.
+- Créer, lire, copier, déplacer et supprimer des fichiers.
+- Utiliser les outils d’aide intégrés.
+
 **Ce que j'ai compris du terminal :**
 Il y a certaines différences avec celui de Windows que je connaissais déjà, mais le terminal de Linux me semble plus souple et je pense qu'il permet de faire plus de choses.
 

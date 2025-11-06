@@ -3,6 +3,13 @@
 
 **Lien des consignes :** [TP-2](https://sand-metacarpal-859.notion.site/TP-2-Exploration-du-syst-me-Linux-28fa4f0ae4ab80dda976de38b1d2247c)
 
+## 🎯 Objectifs du TP
+
+- Comprendre l’organisation du système de fichiers Linux.
+- Identifier les dossiers et fichiers système les plus importants.
+- Utiliser les commandes de base pour explorer, lire et interpréter des fichiers.
+- Coopérer pour expliquer vos découvertes à la classe.
+
 ## Niveau 1 - Découverte
 1. Trouve le fichier qui liste tous les utilisateurs enregistrés.
 2. Trouve le répertoire personnel de ton utilisateur.
