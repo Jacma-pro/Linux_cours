@@ -1,0 +1,52 @@
+# 🧠 TP 6 – Superviser et sauvegarder ton mini-serveur Linux
+
+## 🎯 Objectif
+
+Mettre en place une **solution simple de supervision et de sauvegarde** sur ton système Linux.
+
+L’objectif : prouver que ton poste est prêt à encaisser un incident sans perte de données.
+
+## Missions
+
+| Mission | Résultat attendu |
+| --- | --- |
+| 📦 **Sauvegarde** | Un script sauvegarde un dossier critique (`/etc`, `/var/www`, `/home/...`) dans une archive compressée. |
+| 🔁 **Restauration** | Tu es capable de restaurer cette archive dans un dossier vierge. |
+| 📊 **Supervision** | Un script affiche la charge CPU, la RAM, l’espace disque et les processus principaux. |
+| 🧾 **Journal d’activité** | Tes scripts écrivent des logs avec la date et l’heure de chaque action. |
+| ⚙️ **Automatisation** | Une tâche planifiée exécute la sauvegarde chaque jour. |
+
+## Étapes de réalisation
+
+1. Identifier les données importantes à sauvegarder.
+2. Créer un script pour les archiver et les compresser.
+3. Écrire un second script (ou fonction) pour restaurer.
+4. Surveiller ton système avec des commandes adaptées.
+5. Automatiser une partie de ton travail avec une tâche planifiée.
+
+## Réalisation des missions
+
+### Mission: 📊 Supervision
+*Un script affiche la charge CPU, la RAM, l’espace disque et les processus principaux.*
+
+voir le script : [system_report.sh](./scripts/system_report.sh)
+
+Résultat du script :
+![Rapport système](./images/system-report.png)
+
+### 📦 Sauvegarde
+*Un script sauvegarde un dossier critique (`/etc`, `/var/www`, `/home/...`) dans une archive compressée.*
+
+voir le script : [backup.sh](./scripts/backup.sh)
+
+## 📸 Livrable attendu
+
+- Ton ou tes **scripts fonctionnels** (`.sh`).
+- Une **capture d’écran** prouvant :
+    - la création de l’archive,
+    - sa restauration,
+    - et l’affichage d’un rapport système.
+- Un **bref rapport** (5 à 10 lignes) expliquant :
+    - ce que tu as choisi de sauvegarder,
+    - comment tu vérifies l’état du serveur,
+    - et ce que tu ferais différemment dans une vraie infra.
