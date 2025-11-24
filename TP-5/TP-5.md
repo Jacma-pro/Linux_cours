@@ -61,9 +61,16 @@ sudo ss -tulnp | grep apache2
 Tester l'accessibilité du service web depuis le terminal et installer curl avant :
 ```bash
 sudo apt install curl #si besoin
-curl http://localhost
+sudo curl http://localhost
 ```
 j'ai copié collé le un fichier HTML [ici](./curl.html) 
 
 voir également le rendu avec cette capture d'écran :
 ![Rendu de la page web](./images/apache-webpage.png)
+
+- Un **court rapport** (5 lignes) décrivant :
+    - le service,
+    - comment tu l’as configuré,
+    - et comment tu vérifies qu’il tourne.
+
+Le service web Apache2 est un serveur HTTP open source très populaire. Il permet d'héberger des sites web et de servir des pages aux utilisateurs via le protocole HTTP. Pour le configurer, j'ai installé le paquet `apache2` via la commande `sudo apt install apache2`. Par défaut, Apache2 est configuré pour démarrer automatiquement au démarrage du système. J'ai vérifié que le service tourne en utilisant la commande `sudo systemctl status apache2`, qui m'a confirmé que le service était actif et en cours d'exécution. J'ai également identifié que le service écoute sur le port 80 en utilisant `sudo ss -tulnp | grep apache2`. Enfin, j'ai testé l'accessibilité du service en utilisant `sudo curl http://localhost`, ce qui m'a permis de voir le contenu de la page web par défaut servie par Apache2.
