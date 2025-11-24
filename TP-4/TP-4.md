@@ -42,12 +42,7 @@ sudo ./nettoyage.sh
 ```
 ![alt text](images/nettoyage.png) <br>
 
-- Un court texte (3-5 lignes) expliquant :
-    - ce que fait ton script,
-    - comment tu l’as validé,
-    - et à quoi il sert concrètement.
-
-Mon 
+Mon script supprime les fichiers avec l'extension .log ou .tmp qui ont plus de 7 jours dans le répertoire /tmp. J'ai validé son fonctionnement en créant des fichiers de test avec différentes dates de modification, puis en exécutant le script et en vérifiant que seuls les fichiers plus anciens que 7 jours ont été supprimés (voir la capture d'écran ci-dessus). Ce script est utile pour maintenir le répertoire temporaire propre et éviter l'accumulation de fichiers inutiles qui pourraient occuper de l'espace disque.
 
 ### Mission: 📦 Mise à jour automatisée
 
