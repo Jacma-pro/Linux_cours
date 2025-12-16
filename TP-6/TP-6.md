@@ -39,6 +39,17 @@ Résultat du script :
 
 voir le script : [backup.sh](./scripts/backup.sh)
 
+résultat du script :
+![Sauvegarde](./images/backup.png)
+
+### 🔁 Restauration
+*Tu es capable de restaurer cette archive dans un dossier vierge.*
+
+voir le script : [restore.sh](./scripts/restore.sh)
+
+résultat du script :
+![Restauration](./images/restore.png)
+
 ## 📸 Livrable attendu
 
 - Ton ou tes **scripts fonctionnels** (`.sh`).
@@ -50,3 +61,11 @@ voir le script : [backup.sh](./scripts/backup.sh)
     - ce que tu as choisi de sauvegarder,
     - comment tu vérifies l’état du serveur,
     - et ce que tu ferais différemment dans une vraie infra.
+
+## Le bref rapport
+
+J'ai choisi de sauvegarder le dossier `/etc` car il contient les configurations essentielles du système. Pour vérifier l'état du serveur, j'utilise un script qui affiche la charge CPU, la RAM, l'espace disque et les processus principaux. 
+
+Cela est utile pour détecter un problème de performance ou un dysfonctionnement avant qu'il n'affecte les services.
+
+Dans une vraie infrastructure, je ferais appel à un expert, sinon je me renseignerais davantage sur les bonnes pratiques de sauvegarde, comme la rotation des sauvegardes, le chiffrement des données sensibles, et l'utilisation de solutions de sauvegarde automatisées et centralisées.
