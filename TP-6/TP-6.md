@@ -50,18 +50,6 @@ voir le script : [restore.sh](./scripts/restore.sh)
 résultat du script :
 ![Restauration](./images/restore.png)
 
-## 📸 Livrable attendu
-
-- Ton ou tes **scripts fonctionnels** (`.sh`).
-- Une **capture d’écran** prouvant :
-    - la création de l’archive,
-    - sa restauration,
-    - et l’affichage d’un rapport système.
-- Un **bref rapport** (5 à 10 lignes) expliquant :
-    - ce que tu as choisi de sauvegarder,
-    - comment tu vérifies l’état du serveur,
-    - et ce que tu ferais différemment dans une vraie infra.
-
 ## Le bref rapport
 
 J'ai choisi de sauvegarder le dossier `/etc` car il contient les configurations essentielles du système. Pour vérifier l'état du serveur, j'utilise un script qui affiche la charge CPU, la RAM, l'espace disque et les processus principaux. 
